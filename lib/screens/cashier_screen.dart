@@ -58,7 +58,9 @@ class CashierScreen extends StatelessWidget {
                 ],
               ),
             ),
-            const ListProduct()
+            const Expanded(
+              child: ListProduct(),
+            )
           ],
         ),
       ),

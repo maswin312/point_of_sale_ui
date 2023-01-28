@@ -26,30 +26,35 @@ class ListProduct extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-            SizedBox(
-              width: 120,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    products.name,
-                    style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff2A3256)),
-                  ),
-                  const SizedBox(
-                    height: 20,
-                  ),
-                  Text(
-                    '\$${products.price.toStringAsFixed(2)}',
-                    style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
-                        color: Color(0xff1A72DD)),
-                  ),
-                ],
+            const SizedBox(
+              width: 14,
+            ),
+            Expanded(
+              child: SizedBox(
+                width: 120,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      products.name,
+                      style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xff2A3256)),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      '\$${products.price.toStringAsFixed(2)}',
+                      style: const TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                          color: Color(0xff1A72DD)),
+                    ),
+                  ],
+                ),
               ),
             ),
             Container(
@@ -59,7 +64,9 @@ class ListProduct extends StatelessWidget {
                 color: const Color(0xff1A72DD),
               ),
               child: IconButton(
-                onPressed: () {},
+                onPressed: () {
+                  // print('test add button')
+                },
                 icon: const Icon(
                   Icons.add,
                   size: 24.0,
