@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
           primary: const Color(0xff1A72DD),
         ),
       ),
-      home: HomeScreen(),
+      home: WelcomeScreen(),
     );
   }
 }
