@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:point_of_sale_lat/widgets/nav_drawer.dart';
 
 class CashierScreen extends StatelessWidget {
   const CashierScreen({super.key});
@@ -18,9 +19,7 @@ class CashierScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
       ),
-      drawer: const Drawer(
-        backgroundColor: Colors.green,
-      ),
+      drawer: NavDrawer(),
       body: Container(
         color: Colors.amber,
       ),
