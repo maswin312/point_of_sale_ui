@@ -1,5 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
+import 'package:point_of_sale_lat/screens/cashier_screen.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -82,7 +83,14 @@ class WelcomeScreen extends StatelessWidget {
                   width: 327,
                   height: 57,
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CashierScreen(),
+                        ),
+                      );
+                    },
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(

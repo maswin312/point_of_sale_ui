@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:point_of_sale_lat/screens/home_screen.dart';
+import 'package:point_of_sale_lat/screens/welcome_screen.dart';
 
 void main() => runApp(const MyApp());
 
