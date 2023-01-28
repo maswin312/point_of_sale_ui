@@ -38,6 +38,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            Image.asset('assets/images/6.png'),
             const Text(
               "Easy Management for your Store",
               style: TextStyle(
@@ -80,8 +84,13 @@ class HomeScreen extends StatelessWidget {
                   child: ElevatedButton(
                     onPressed: () {},
                     style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.white),
                       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
+                          side: const BorderSide(
+                            width: 1,
+                            color: Color(0xff1A72DD),
+                          ),
                           borderRadius: BorderRadius.circular(12),
                         ),
                       ),
@@ -89,6 +98,7 @@ class HomeScreen extends StatelessWidget {
                     child: const Text(
                       "Log in",
                       style: TextStyle(
+                        color: Color(0xff1A72DD),
                         fontSize: 16,
                         fontWeight: FontWeight.w500,
                       ),
