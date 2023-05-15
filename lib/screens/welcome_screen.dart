@@ -54,27 +54,27 @@ class WelcomeScreen extends StatelessWidget {
             ),
             Column(
               children: [
-                SizedBox(
-                  width: 327,
-                  height: 57,
-                  child: ElevatedButton(
-                    onPressed: () {},
-                    style: ButtonStyle(
-                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                      ),
-                    ),
-                    child: const Text(
-                      'Create new account',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.w500,
-                      ),
-                    ),
-                  ),
-                ),
+                // SizedBox(
+                //   width: 327,
+                //   height: 57,
+                //   child: ElevatedButton(
+                //     onPressed: () {},
+                //     style: ButtonStyle(
+                //       shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                //         RoundedRectangleBorder(
+                //           borderRadius: BorderRadius.circular(12),
+                //         ),
+                //       ),
+                //     ),
+                //     child: const Text(
+                //       'Create new account',
+                //       style: TextStyle(
+                //         fontSize: 16,
+                //         fontWeight: FontWeight.w500,
+                //       ),
+                //     ),
+                //   ),
+                // ),
                 const SizedBox(
                   height: 20,
                 ),
